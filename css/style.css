@@ -1,5 +1,5 @@
 body {
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-family: "Roboto", sans-serif;
   padding: 0;
   margin: 0;
 }
@@ -30,6 +30,7 @@ body {
   z-index: 1;
   background-color: rgba(0, 0, 0, 0.2);
   overflow-y: scroll;
+  animation: modalopen 1s;
 }
 .modal-content {
   width: 70%;
@@ -86,7 +87,7 @@ body {
 
 ul li button {
   float: right;
-  background-color: rgb(223, 16, 16);
+  background-color: #dc3545;
   padding: 0.5rem;
   border-radius: 7px;
   color: #fff;
@@ -105,4 +106,25 @@ ul li button {
   text-align: center;
   color: #ccc;
   display: none;
+}
+.modal-footer {
+  padding: 15px;
+  overflow: auto;
+}
+.modal-footer .btn-cancel {
+  float: right;
+  color: #000;
+  background-color: #f4f4f4;
+  padding: 1rem 2rem;
+  border: 0;
+  cursor: pointer;
+  font-size: 16px;
+}
+@keyframes modalopen {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }

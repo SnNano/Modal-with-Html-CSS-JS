@@ -4,11 +4,13 @@ let modal = document.querySelector("#modal");
 let clickBtn = document.querySelector(".ClickBtn");
 // Getting the close button
 let closeBtn = document.querySelector(".closeBtn");
+let btnCancel = document.querySelector(".btn-cancel");
 
 // Listener for click button
 clickBtn.addEventListener("click", openModal);
-// Listener fo closing button
+// Listener fo closing
 closeBtn.addEventListener("click", closeModal);
+btnCancel.addEventListener("click", closeModal);
 window.addEventListener("click", windowClose);
 
 function openModal() {

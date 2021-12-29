@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Tasks</title>
+  </head>
+  <body>
+    <button id="ClickBtn" class="ClickBtn">Click Me !</button>
+    <div class="modal" id="modal">
+      <div class="modal-content">
+        <div class="modal-header">
+          <span class="closeBtn">&times;</span>
+          <h2>Add tasks</h2>
+        </div>
+        <div class="modal-body">
+          <form id="addForm">
+            <div class="divForm">
+              <input
+                type="text"
+                class="form-control"
+                id="inputForm"
+                placeholder="New task ..."
+              />
+              <input type="submit" class="submitForm" />
+            </div>
+          </form>
+          <div class="search-here">
+            <input
+              type="text"
+              class="form-control"
+              id="filter"
+              placeholder="Search ..."
+            />
+          </div>
+          <ul class="list-items">
+            <div class="no-tasks">There are no tasks.</div>
+            <li class="item">
+              Task 1 <button class="btn-danger delete">X</button>
+            </li>
+            <li class="item">
+              Task 2 <button class="btn-danger delete">X</button>
+            </li>
+            <li class="item">
+              Task 3 <button class="btn-danger delete">X</button>
+            </li>
+            <li class="item">
+              Task 4 <button class="btn-danger delete">X</button>
+            </li>
+          </ul>
+        </div>
+        <div class="modal-footer"></div>
+      </div>
+    </div>
+  </body>
+  <script src="js/main.js"></script>
+</html>
